@@ -1,0 +1,42 @@
+.ant-modal {
+  border-radius: 1px;
+}
+
+.ant-modal-content {
+  @apply text-primary;
+  @apply bg-l0;
+  @apply rounded-lg;
+
+  .ant-modal-header {
+    background: transparent;
+  }
+
+  .ant-modal-title {
+    @apply text-primary;
+    @apply font-heading;
+    @apply text-xl;
+  }
+
+  .ant-modal-close-x {
+    @apply text-secondary;
+  }
+
+  .ant-modal-footer,
+  .ant-modal-header {
+    border-color: transparent;
+  }
+}
+
+.ant-modal-wrap,
+.ant-modal-mask {
+  z-index: 20 !important;
+}
+
+.ant-modal-footer {
+  @apply flex;
+  @apply justify-end;
+
+  .ant-btn {
+    max-width: 100%;
+  }
+}

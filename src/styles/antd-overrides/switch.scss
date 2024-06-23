@@ -1,0 +1,6 @@
+.ant-switch {
+  @apply bg-l1;
+  &.ant-switch-checked {
+    @apply bg-action-primary;
+  }
+}

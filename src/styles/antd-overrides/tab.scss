@@ -1,0 +1,38 @@
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  border-bottom: 1px solid;
+  @apply stroke-tertiary;
+}
+
+.ant-tabs {
+  color: unset
+}
+
+.ant-tabs-nav {
+  margin-bottom: 2rem !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-tab .ant-tabs-tab-btn {
+  font-weight: inherit;
+  @apply text-primary;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  @apply font-medium;
+}
+
+.ant-tabs-tab-btn,
+.ant-tabs-tab .ant-tabs-tab-btn {
+  @apply text-secondary;
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.ant-tabs-ink-bar {
+  @apply bg-black dark:bg-slate-100;
+  height: 1px !important;
+}

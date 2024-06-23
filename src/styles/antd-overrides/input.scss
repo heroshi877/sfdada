@@ -1,0 +1,307 @@
+// Special case where ant input with prefix/suffix needs to be overriden.
+.ant-input-affix-wrapper .ant-input,
+.ant-input-textarea textarea {
+  @apply text-primary;
+  @apply py-1.5;
+}
+
+.ant-input-number,
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-input-group-addon,
+.ant-input-affix-wrapper-disabled,
+.ant-input[disabled] {
+  background: transparent;
+  @apply text-primary;
+  @apply stroke-secondary;
+  @apply bg-smoke-50 dark:bg-slate-600;
+  @apply rounded-lg;
+
+  &:hover {
+    @apply stroke-primary;
+  }
+
+  &.ant-input-number-focused,
+  &.ant-input-affix-wrapper-focused,
+  &:focus {
+    @apply input-focus;
+    @apply stroke-secondary;
+  }
+
+  &.err-suffix {
+    .ant-input-suffix {
+      @apply text-warning;
+    }
+  }
+}
+
+.ant-input-number-input-wrap,
+.ant-input-number-input {
+  @apply rounded-lg;
+  @apply h-full;
+}
+
+.formatted-number-input .ant-input-number-input-wrap input, .ant-input-number-input {
+  @apply py-1;
+}
+
+.ant-input-lg {
+  @apply h-11;
+}
+
+.ant-input-number-lg input {
+  height: 46px; // Ant-d has different rules for number inputs. Needs to be [48-2]px to account for borders.
+}
+
+.ant-form-item-explain.ant-form-item-explain-error {
+  @apply text-error;
+}
+
+.ant-form-item-has-error {
+  .ant-input-number,
+  .ant-input,
+  .ant-input-affix-wrapper {
+    @apply stroke-error-500;
+  }
+  .ant-input-prefix {
+    @apply text-error;
+  }
+}
+
+.ant-form-item-has-error {
+  .ant-input-number,
+  .ant-input,
+  .ant-input-affix-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+.ant-input::placeholder {
+  @apply text-tertiary;
+}
+
+.ant-empty-description {
+  @apply text-secondary;
+}
+
+.antd-no-number-handler {
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+}
+
+.ant-input-number-handler-up-inner {
+  @apply text-action-primary;
+}
+
+.ant-form {
+  @apply text-primary;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+  @apply text-primary;
+}
+
+.ant-form-item-extra {
+  @apply text-secondary;
+  @apply text-xs;
+  margin-top: 8px;
+  min-height: unset;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.ant-input::-webkit-outer-spin-button,
+input.ant-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.ant-input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.ant-input-prefix,
+.ant-input-show-count-suffix {
+  @apply text-secondary;
+}
+
+.ant-picker,
+.ant-picker-dropdown,
+.ant-picker-panel-container {
+  @apply text-secondary;
+  @apply bg-l0;
+}
+
+.ant-picker input {
+  @apply text-primary;
+}
+
+.ant-picker-suffix,
+.ant-picker-header-view,
+.ant-picker-content th,
+.ant-picker-cell-in-view:not(.ant-picker-cell-disabled) {
+  @apply text-primary;
+}
+
+.ant-picker-cell-disabled,
+.ant-picker-cell:not(.ant-picker-cell-in-view) {
+  @apply text-disabled;
+}
+
+.ant-picker-time-panel-cell-inner {
+  @apply text-secondary;
+}
+
+.ant-picker-cell:hover .ant-picker-cell-inner {
+  @apply bg-l2;
+}
+
+.ant-picker-time-panel-cell:hover .ant-picker-time-panel-cell-inner {
+  @apply bg-l2;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  @apply stroke-tertiary;
+}
+
+input:-internal-autofill,
+input:-internal-autofill:hover,
+input:-internal-autofill:focus,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill-selected {
+  background: transparent !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  background-image: none !important;
+}
+
+.ant-input-affix-wrapper.align-end > input {
+  text-align: end;
+}
+
+.ant-form-item-label > label {
+  @apply text-primary;
+}
+
+.ant-input-textarea {
+  width: 100%;
+}
+
+textarea.ant-input::placeholder {
+  @apply text-tertiary;
+}
+
+.ant-input-textarea-show-count::after {
+  @apply text-tertiary;
+}
+
+.ant-upload {
+  @apply text-primary;
+}
+
+.ant-upload-select-picture-card .ant-upload {
+  min-height: 101px;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  @apply bg-l1;
+  width: 100%;
+  min-height: 104px;
+  height: unset;
+}
+
+.ant-upload-list,
+.ant-upload-list-text {
+  @apply text-secondary;
+}
+
+.ant-upload-list-item:hover {
+  .ant-upload-list-item-info {
+    background: transparent;
+  }
+}
+
+.ant-upload-text-icon > span {
+  @apply text-secondary;
+}
+
+.ant-upload-list-item-card-actions {
+  .anticon {
+    @apply text-secondary;
+  }
+}
+
+.ant-form-item-control-input {
+  min-height: 4px; // get error messages appearing closer to the input fields
+}
+
+.ant-input-group-addon {
+  background: transparent;
+}
+
+/* EXPLORE PAGE SEARCH BAR */
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button:not(.ant-btn-primary),
+.ant-input-search-button {
+  border: 1px solid;
+  @apply stroke-primary;
+  @apply text-primary;
+}
+.ant-input-search-button {
+  @apply h-12;
+  @apply w-12;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+.ant-input-group-addon {
+  border: none;
+}
+
+// The input field (left of the button)
+.ant-input-search .ant-input-group .ant-input-affix-wrapper {
+  @apply h-12;
+  border-radius: 8px 0 0 8px !important;
+}
+
+/* */
+
+.ant-input-clear-icon {
+  @apply text-secondary;
+
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.anticon.ant-input-clear-icon {
+  @apply text-secondary;
+
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.ant-form-item-label > label .ant-form-item-optional {
+  @apply text-secondary;
+  font-weight: 400;
+}
+
+.ant-input-number-disabled {
+  border: 1px solid;
+  @apply stroke-tertiary;
+}
+
+.ant-input-number-disabled input {
+  @apply text-tertiary;
+}
+
+.ant-form-item-label > label .ant-form-item-tooltip {
+  @apply text-secondary;
+}

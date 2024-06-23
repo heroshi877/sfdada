@@ -1,0 +1,23 @@
+overwrite: true
+schema: ${SUBGRAPH_URL}
+documents: 'src/graphql/**/*.graphql'
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-resolvers'
+      - 'typescript-react-apollo'
+      - add:
+          content: "import { BigNumber } from 'ethers'"
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'
+config:
+  namingConvention:
+    enumValues: keep
+  scalars:
+    BigInt: BigNumber
+  avoidOptionals:
+    field: true
+  skipTypename: true

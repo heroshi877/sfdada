@@ -1,0 +1,31 @@
+.ant-dropdown-menu-title-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ant-dropdown-menu-item:hover {
+  @apply bg-l1;
+}
+
+.ant-dropdown-menu {
+  padding: 0;
+  border-radius: 1px;
+  @apply bg-l0;
+  border: 1px solid;
+  @apply stroke-tertiary;
+  @apply shadow-sm;
+  @apply shadow-smoke-100 dark:shadow-slate-600;
+  @apply rounded-lg;
+}
+
+.ant-dropdown-menu-item {
+  padding: 10px 15px;
+  font-weight: 500;
+  &:first-child {
+    @apply rounded-t-lg;
+  }
+  &:last-child {
+    @apply rounded-b-lg;
+  }
+}

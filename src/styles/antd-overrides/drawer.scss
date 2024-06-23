@@ -1,0 +1,16 @@
+.ant-drawer-content {
+  @apply bg-l0;
+}
+
+.ant-drawer-close {
+  @apply text-secondary;
+}
+
+.ant-drawer-header {
+  @apply bg-l0;
+  @apply border-b-0;
+}
+
+.ant-drawer {
+  z-index: 20 !important;
+}

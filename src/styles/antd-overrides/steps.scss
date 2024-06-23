@@ -1,0 +1,55 @@
+.ant-steps-item-title {
+  text-transform: uppercase;
+  @apply font-medium;
+  @apply text-sm;
+  line-height: 24px;
+}
+
+.ant-steps {
+  .ant-steps-item:not(.ant-steps-item-active) {
+    > .ant-steps-item-container[role='button']:hover {
+      .ant-steps-item-title,
+      .ant-steps-item-subtitle,
+      .ant-steps-item-description {
+        @apply text-primary;
+      }
+    }
+  }
+}
+
+
+// Process steps
+.ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  @apply text-primary;
+  @apply font-medium;
+}
+
+// Process steps
+.ant-steps
+  > .ant-steps-item-process:not(.ant-steps-item-active)
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  @apply text-secondary;
+  font-weight: 400;
+}
+
+// Finish steps
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  @apply text-secondary;
+}
+
+// Wait steps
+.ant-steps-item-wait
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  @apply text-disabled;
+  font-weight: 400;
+}

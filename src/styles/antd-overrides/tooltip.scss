@@ -1,0 +1,24 @@
+.ant-tooltip-inner {
+  @apply text-white dark:text-slate-900;
+  @apply bg-slate-600 dark:bg-smoke-100;
+  @apply px-3 py-2;
+  @apply text-xs;
+  @apply rounded-md;
+  @apply shadow-sm;
+}
+
+.ant-tooltip-arrow-content::before {
+  background: theme('colors.slate.600');
+}
+
+.dark .ant-tooltip-arrow-content::before {
+  background: theme('colors.smoke.100');
+}
+
+.ant-tooltip-disabled-compatible-wrapper.block {
+  display: block !important;
+}
+
+.ant-tooltip-content a {
+  @apply text-bluebs-300 hover:text-bluebs-400 hover:underline dark:text-bluebs-600 dark:hover:text-bluebs-500;
+}

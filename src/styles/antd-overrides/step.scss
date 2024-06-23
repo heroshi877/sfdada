@@ -1,0 +1,71 @@
+.ant-steps-item-finish {
+  .ant-steps-item-icon {
+
+    .ant-steps-icon .ant-steps-icon-dot {
+      @apply bg-action-primary;
+    }
+    .ant-steps-icon {
+      @apply text-action-primary;
+    }
+
+    @apply stroke-action-primary;
+  }
+
+  .ant-steps-item-container {
+    .ant-steps-item-tail::after {
+      @apply bg-action-primary;
+    }
+    .ant-steps-item-content > .ant-steps-item-title::after {
+      @apply bg-action-primary;
+    }
+  }
+}
+
+.ant-steps-item-wait {
+  .ant-steps-item-icon {
+    @apply text-secondary;
+    @apply bg-l2;
+    @apply stroke-secondary;
+    .ant-steps-icon-dot {
+      @apply bg-l2;
+    }
+    > .ant-steps-icon {
+      @apply text-secondary;
+    }
+  }
+
+  .ant-steps-item-container {
+    .ant-steps-item-tail::after {
+      @apply bg-l2;
+    }
+  }
+}
+
+.ant-steps-item-process {
+  .ant-steps-item-icon {
+    .ant-steps-icon .ant-steps-icon-dot {
+      @apply bg-action-primary;
+    }
+  }
+
+  .ant-steps-item-container {
+    .ant-steps-item-tail::after {
+      @apply bg-l2;
+    }
+  }
+}
+
+.ant-steps-item-process
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  @apply text-action-primary;
+  &:after {
+    @apply bg-grey-300 dark:bg-slate-300;
+  }
+}
+
+.ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+  @apply bg-action-primary;
+  @apply stroke-action-primary;
+}

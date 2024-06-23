@@ -1,0 +1,62 @@
+.ant-slider {
+  .ant-slider-rail {
+    @apply bg-smoke-200 dark:bg-slate-500;
+  }
+  .ant-slider-track {
+    @apply bg-action-primary;
+  }
+
+  .ant-slider-handle {
+    @apply bg-action-highlight;
+    @apply stroke-action-highlight;
+  }
+
+  &:hover {
+    .ant-slider-rail {
+      @apply bg-smoke-300 dark:bg-slate-400;
+    }
+    .ant-slider-track {
+      @apply bg-action-primary;
+    }
+
+    .ant-slider-handle {
+      @apply bg-action-highlight;
+      @apply stroke-action-highlight;
+      @apply shadow-sm;
+    }
+  }
+}
+
+.ant-slider-disabled {
+  .ant-slider-rail {
+    @apply bg-disabled;
+  }
+  .ant-slider-track {
+    @apply bg-disabled;
+  }
+
+  .ant-slider-handle {
+    @apply bg-disabled dark:bg-grey-300;
+    @apply stroke-disabled;
+  }
+
+  &:hover {
+    .ant-slider-rail {
+      @apply bg-disabled;
+      opacity: 0.7;
+    }
+    .ant-slider-track {
+      @apply bg-disabled;
+    }
+
+    .ant-slider-handle {
+      @apply bg-disabled;
+      border-color: transparent !important;
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+
+  .ant-slider-handle:focus {
+    box-shadow: 0 0 0 5px transparent;
+  }
+}

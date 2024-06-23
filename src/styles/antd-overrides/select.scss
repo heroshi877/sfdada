@@ -1,0 +1,105 @@
+.ant-select,
+.ant-select:not(.ant-select-disabled):hover,
+.ant-select:not(.ant-select-customize-input) {
+  .ant-select-selector {
+    background-color: transparent;
+    @apply text-primary;
+    @apply stroke-secondary;
+    @apply rounded-lg;
+  }
+
+  .ant-select-arrow {
+    @apply text-primary;
+  }
+}
+
+.ant-select-selector {
+  height: 100% !important;
+}
+
+.ant-select-color-secondary {
+  .ant-select-selector,
+  .ant-select-arrow {
+    @apply text-secondary;
+  }
+}
+
+.ant-select.small {
+  .ant-select-selector {
+    height: 24px;
+    @apply stroke-tertiary;
+  }
+  .ant-select-selection-item {
+    line-height: 22px;
+    @apply text-secondary;
+    @apply font-medium;
+  }
+  .ant-select-arrow {
+    margin-top: -4px;
+    @apply text-xs;
+  }
+}
+
+.ant-select-dropdown {
+  padding: 0;
+  @apply bg-l0;
+  border: 1px solid;
+  @apply stroke-tertiary;
+  @apply shadow-md;
+  @apply shadow-smoke-100 dark:shadow-slate-600;
+  @apply rounded-lg;
+
+  .ant-select-item-option {
+    @apply text-primary;
+  }
+
+  .ant-select-item-option-active {
+    @apply text-primary;
+    @apply bg-l2;
+  }
+
+  .ant-select-item-option-selected {
+    @apply text-primary;
+    @apply bg-l2;
+  }
+}
+
+// Specific to language Select in top nav
+.language-selector {
+  .ant-select {
+    border: none !important;
+    margin-left: 4px;
+    width: 100%;
+  }
+
+  .ant-select-selector {
+    height: 24px;
+    padding: 0 8px !important;
+    border: none !important;
+  }
+  .ant-select-arrow {
+    display: none;
+  }
+  .ant-select-selection-item {
+    text-align: left;
+    padding: 0 !important;
+    font-weight: 400;
+  }
+}
+
+.language-selector .ant-select-focused .ant-select-selector {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ant-select {
+  @apply flex items-center;
+}
+
+.ant-select-lg {
+  @apply h-11;
+}
+
+.ant-select-selection-item {
+  margin: auto;
+}

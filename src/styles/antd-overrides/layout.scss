@@ -1,0 +1,18 @@
+.ant-layout-header {
+  @apply text-primary;
+  z-index: 10;
+}
+
+.ant-divider {
+  @apply stroke-tertiary;
+}
+
+.ant-layout-sider-zero-width-trigger {
+  @apply text-primary;
+  @apply bg-l0;
+}
+
+.settings-layout .ant-layout-sider-zero-width-trigger {
+  top: -3px;
+  @apply text-2xl;
+}

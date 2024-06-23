@@ -1,0 +1,31 @@
+.ant-radio-checked .ant-radio-inner {
+  @apply stroke-action-primary;
+}
+
+.ant-radio-inner::after {
+  @apply bg-action-primary;
+}
+
+.ant-radio-wrapper,
+.ant-radio-button-wrapper {
+  @apply text-primary;
+  &:hover {
+    @apply text-primary;
+  }
+}
+
+.ant-radio-wrapper-disabled span {
+  @apply text-disabled;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled),
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover,
+.ant-radio-button-wrapper-checked:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child,
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+  @apply stroke-action-primary;
+  @apply text-action-primary;
+
+  &::before {
+    @apply bg-action-primary
+  }
+}

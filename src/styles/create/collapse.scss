@@ -1,0 +1,21 @@
+.create-collapse {
+  .ant-collapse-header {
+    padding: 1.5rem 0 !important;
+    padding-left: 0 !important;
+    border-bottom: 1px solid;
+    @apply stroke-tertiary;
+  }
+
+  .ant-collapse-header-text {
+    @apply text-primary;
+    span {
+      @apply text-secondary;
+    }
+  }
+
+  .ant-collapse-content-box {
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

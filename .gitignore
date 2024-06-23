@@ -1,0 +1,44 @@
+# dependencies
+/node_modules
+
+# testing
+coverage
+
+# production
+build
+dist
+
+# misc
+.DS_Store
+.env*
+.rinkeby.env
+.kovan.env
+.eslintcache*
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea
+
+mnemonic.txt
+
+# i18n
+src/locales/**/*.js
+src/locales/en/messages.po
+
+# compiled artifacts
+src/styles/antd.css
+
+# Optional REPL history
+.node_repl_history
+.next
+
+# GraphQL Codegen
+graphql.schema.json
+src/generated
+
+# tsc
+*.tsbuildinfo
+

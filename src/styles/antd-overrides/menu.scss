@@ -1,0 +1,105 @@
+.ant-menu-submenu-arrow {
+  @apply text-primary;
+}
+
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background: unset !important;
+}
+
+.ant-menu-inline .ant-menu-item {
+  width: auto;
+  @apply rounded-lg;
+}
+
+.ant-menu-submenu-title {
+  @apply text-primary;
+  @apply font-medium;
+}
+
+.ant-menu-sub {
+  margin-top: -10px !important;
+}
+
+.ant-menu-sub.ant-menu-inline {
+  background: none;
+}
+
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: -4px !important;
+}
+
+.ant-menu-submenu-arrow {
+  position: static;
+  margin-left: 15px;
+}
+
+nav .ant-menu-item:hover {
+  background: none !important;
+}
+
+.menu-item-sider:hover {
+  @apply bg-l2;
+}
+
+.ant-menu-item-group-title {
+  text-transform: uppercase;
+  padding-bottom: 0;
+  @apply text-xs;
+}
+
+.ant-menu > .ant-menu-item-divider {
+  margin: 1rem 0;
+  @apply stroke-tertiary;
+}
+
+.ant-layout-sider {
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    @apply bg-smoke-100 dark:bg-slate-500;
+    @apply text-primary;
+    @apply font-medium;
+    &:hover {
+      @apply bg-smoke-100 dark:bg-slate-500;
+    }
+  }
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu-dark.ant-menu-dark.ant-menu-item-selected {
+  background: none;
+}
+
+
+.ant-menu-light .ant-menu-item:hover {
+  @apply text-primary;
+  @apply bg-l1;
+}
+
+.ant-menu,
+.ant-menu-item,
+.ant-menu-item > a .ant-menu-item a {
+  @apply text-primary;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.ant-menu-inline.ant-menu-root .ant-menu-item {
+  transition: border-color 0.1s, background 0.1s, padding 0.1s linear;
+}
+
+.ant-menu-item::after {
+  display: none !important;
+}
+
+.ant-menu.ant-menu-dark {
+  background-color: transparent;
+}
+
+.ant-menu-light .ant-menu-item-active {
+  @apply text-primary;
+}
+
+ul.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu {
+  margin-top: 15px !important;
+}

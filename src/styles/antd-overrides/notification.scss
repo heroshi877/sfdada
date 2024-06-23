@@ -1,0 +1,19 @@
+.ant-notification-notice {
+  @apply bg-l0;
+
+  .ant-notification-notice-message {
+    @apply text-primary;
+  }
+  .ant-notification-notice-description {
+    @apply text-secondary;
+  }
+
+  .ant-notification-notice-close-icon {
+    @apply text-secondary;
+  }
+
+  .ant-notification-notice-description {
+    max-height: 120px;
+    overflow-y: auto;
+  }
+}

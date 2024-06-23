@@ -1,0 +1,31 @@
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: transparent;
+}
+
+.ant-descriptions-item-label {
+  @apply text-secondary;
+}
+
+.ant-descriptions-item-content {
+  @apply text-primary;
+}
+
+th.ant-descriptions-item-label {
+  @apply font-medium;
+}
+
+.ant-descriptions-bordered {
+  .ant-descriptions-view,
+  .ant-descriptions-row,
+  .ant-descriptions-item-label {
+    @apply stroke-secondary;
+  }
+}
+
+.ant-descriptions-item-content.content-right {
+  text-align: right;
+}
+
+.ant-descriptions-item-container {
+  flex-wrap: wrap;
+}

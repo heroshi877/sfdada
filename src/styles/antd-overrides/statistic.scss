@@ -1,0 +1,14 @@
+.ant-statistic-content {
+  @apply font-body;
+  @apply text-xl;
+  @apply text-primary;
+  @apply font-medium;
+}
+
+.ant-statistic-title {
+  @apply flex items-center gap-1;
+  @apply text-secondary;
+  margin: 0;
+  text-transform: uppercase;
+  @apply text-xs;
+}
